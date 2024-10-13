@@ -10,12 +10,17 @@ import Link from "next/link";
 import { FieldValues, SubmitHandler } from "react-hook-form";
 
 export default function Register() {
-  const { mutate: handleRegistration, isPending, isError, error } = useUserRegistration();
+  const {
+    mutate: handleRegistration,
+    isPending,
+    isError,
+    error,
+  } = useUserRegistration();
 
-  const onSubmit: SubmitHandler<FieldValues> = (data) => {
+  const onSubmit: SubmitHandler<FormData> = (data) => {
     const userData = {
       ...data,
-      role : "admin",
+      role: "admin",
       profilePhoto:
         "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png",
     };
@@ -58,7 +63,6 @@ export default function Register() {
               Register
             </Button>
           </FXForm>
-         
 
           {isError && (
             <div className="mt-4 text-red-500">
