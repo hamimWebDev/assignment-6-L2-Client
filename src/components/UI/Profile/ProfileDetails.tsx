@@ -38,7 +38,7 @@ function ProfileDetails({ user, recipe }: { user: Author; recipe: IRecipe[] }) {
         {
           onSuccess: () => toast.success("Unfollowed successfully"),
           onError: (error) => {
-            console.log(error);
+            console.log(error)
             toast.error("Failed to unfollow the user. Please try again.");
             setIsFollowing(true); // Revert on error
           },
@@ -72,14 +72,15 @@ function ProfileDetails({ user, recipe }: { user: Author; recipe: IRecipe[] }) {
           <h1 className="text-3xl font-bold">{user?.name || "Unnamed User"}</h1>
           <p className="text-gray-600">{user?.bio || "No bio available"}</p>
           {currentUser?.email !== user?.email && (
-            <Button
-              className={`mt-4 ${isFollowing ? "bg-red-600" : "bg-blue-600"}`}
-              size="sm"
-              onClick={handleFollowToggle}
-            >
-              {isFollowing ? "Unfollow" : "Follow"}
-            </Button>
-          )}
+          <Button
+            className={`mt-4 ${isFollowing ? "bg-red-600" : "bg-blue-600"}`}
+            size="sm"
+            onClick={handleFollowToggle}
+          >
+            {isFollowing ? "Unfollow" : "Follow"}
+          </Button>
+        )}
+
         </div>
       </div>
 

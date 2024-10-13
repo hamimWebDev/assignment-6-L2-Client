@@ -3,14 +3,11 @@
 import { SearchIcon } from "@/src/components/icons";
 import RecipeCard from "@/src/components/UI/Recipe/RecipeCard";
 import { getAllRecipes } from "@/src/services/RecipeService";
-
 import { Input } from "@nextui-org/input";
 
 export default async function Home() {
-  const {
-    data: { recipes },
-  } = await getAllRecipes();
-
+  const { data: { recipes } } = await getAllRecipes();
+console.log(recipes)
   return (
     <section className="py-10">
       {/* Search Bar */}
@@ -30,6 +27,7 @@ export default async function Home() {
             type="text"
           />
         </form>
+        
       </div>
       <hr />
 

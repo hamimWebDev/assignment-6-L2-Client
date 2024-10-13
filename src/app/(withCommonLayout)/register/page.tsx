@@ -10,12 +10,7 @@ import Link from "next/link";
 import { FieldValues, SubmitHandler } from "react-hook-form";
 
 export default function Register() {
-  const {
-    mutate: handleRegistration,
-    isPending,
-    isError,
-    error,
-  } = useUserRegistration();
+  const { mutate: handleRegistration, isPending, isError, error } = useUserRegistration();
 
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     const userData = {
@@ -31,9 +26,7 @@ export default function Register() {
     <>
       {isPending && <Loading />}
       <div className="flex h-[calc(100vh-200px)] w-full flex-col items-center justify-center">
-        <h3 className="my-2 text-2xl font-bold">
-          Register with Recipe Hunters
-        </h3>
+        <h3 className="my-2 text-2xl font-bold">Register with Recipe Circle</h3>
         <p className="mb-4">Join us and start creating delicious recipes!</p>
         <div className="w-[35%]">
           <FXForm

@@ -1,6 +1,6 @@
-"use client";
-import { Card, CardBody, Button } from "@nextui-org/react";
-import Link from "next/link";
+"use client"
+import { Card, CardBody, Button } from '@nextui-org/react';
+import Link from 'next/link';
 
 export default function AboutUs() {
   return (
@@ -24,11 +24,9 @@ export default function AboutUs() {
                   Our Mission
                 </h3>
                 <p className="mt-3 text-gray-600 dark:text-gray-300">
-                  At Recipe Service, our mission is to bring people together
-                  through the joy of cooking. We believe that everyone should
-                  have access to delicious recipes, and we aim to provide a
-                  platform where culinary enthusiasts can share and discover new
-                  dishes from around the world.
+                  At Recipe Service, our mission is to bring people together through the joy of cooking.
+                  We believe that everyone should have access to delicious recipes, and we aim to provide
+                  a platform where culinary enthusiasts can share and discover new dishes from around the world.
                 </p>
               </div>
             </div>
@@ -49,11 +47,10 @@ export default function AboutUs() {
                   Our Team
                 </h3>
                 <p className="mt-3 text-gray-600 dark:text-gray-300">
-                  Our team consists of passionate food lovers, professional
-                  chefs, and dedicated home cooks who work tirelessly to curate
-                  the best recipes and cooking tips for our community. Together,
-                  we strive to inspire creativity in the kitchen and promote a
-                  love for cooking that spans generations.
+                  Our team consists of passionate food lovers, professional chefs, and dedicated home cooks
+                  who work tirelessly to curate the best recipes and cooking tips for our community.
+                  Together, we strive to inspire creativity in the kitchen and promote a love for cooking
+                  that spans generations.
                 </p>
               </div>
             </div>
@@ -74,14 +71,15 @@ export default function AboutUs() {
                   Join Us
                 </h3>
                 <p className="mt-3 text-gray-600 dark:text-gray-300">
-                  We invite you to explore our collection of recipes, contribute
-                  your own, and become part of our vibrant community. Whether
-                  you're a beginner or a seasoned chef, there’s something for
-                  everyone at Recipe Service!
+                  We invite you to explore our collection of recipes, contribute your own, and become part
+                  of our vibrant community. Whether you're a beginner or a seasoned chef, there’s something
+                  for everyone at Recipe Service!
                 </p>
                 <div className="mt-5 text-center">
                   <Link href="/" passHref>
-                    <Button size="lg">Explore Recipes</Button>
+                    <Button size="lg" >
+                      Explore Recipes
+                    </Button>
                   </Link>
                 </div>
               </div>
